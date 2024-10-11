@@ -1,10 +1,11 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  frontend
 //
 //  Created by Анастасия Гусак on 11.10.2024.
 //
 
+import Foundation
 import SwiftUI
 
 struct ContentView: View {
