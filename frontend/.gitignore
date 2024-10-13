@@ -38,3 +38,8 @@ fastlane/test_output
 # Environment files
 .env
 
+.DS_Store
+frontend.xcodeproj/project.xcworkspace/xcuserdata/
+frontend.xcodeproj/xcshareddata/
+frontend.xcodeproj/xcuserdata/ivanfrolov.xcuserdatad/
+
