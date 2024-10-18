@@ -33,6 +33,8 @@
 		D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */; };
 		D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE542CB9B21F00BAA865 /* Assets.xcassets */; };
 		D03EBE592CB9B21F00BAA865 /* ScheduleWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D03EBE492CB9B21D00BAA865 /* ScheduleWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D06530C42CC2BC4400C546E2 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06530C32CC2BC4400C546E2 /* Inter.ttf */; };
+		D06530C52CC2BC4400C546E2 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06530C32CC2BC4400C546E2 /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidgets.swift; sourceTree = "<group>"; };
 		D03EBE542CB9B21F00BAA865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03EBE562CB9B21F00BAA865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06530C32CC2BC4400C546E2 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		D06530C62CC2BCFE00C546E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 		D03EBE062CB993E800BAA865 /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				D06530C62CC2BCFE00C546E2 /* Info.plist */,
 				D03EBE1B2CB99BEA00BAA865 /* Models */,
 				D03EBE242CB99CAC00BAA865 /* Views */,
 				D03EBE1C2CB99CAC00BAA865 /* ViewModels */,
@@ -177,6 +182,7 @@
 		D03EBE1D2CB99CAC00BAA865 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D06530C22CC2BC2D00C546E2 /* Fonts */,
 				D03EBE0B2CB993E900BAA865 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -264,6 +270,14 @@
 			path = ScheduleWidgets;
 			sourceTree = "<group>";
 		};
+		D06530C22CC2BC2D00C546E2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D06530C32CC2BC4400C546E2 /* Inter.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,6 +361,7 @@
 			files = (
 				D03EBE0F2CB993E900BAA865 /* Preview Assets.xcassets in Resources */,
 				D03EBE1A2CB99A6400BAA865 /* .gitignore in Resources */,
+				D06530C42CC2BC4400C546E2 /* Inter.ttf in Resources */,
 				D03EBE0C2CB993E900BAA865 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D06530C52CC2BC4400C546E2 /* Inter.ttf in Resources */,
 				D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +552,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = frontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -565,6 +582,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = frontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
