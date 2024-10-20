@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291FA73B2CC55CAA00747E7C /* LessonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */; };
+		291FA73C2CC55CAA00747E7C /* LessonComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */; };
+		292193562CBE90EA00084BE3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292193552CBE90EA00084BE3 /* Day.swift */; };
+		292193572CBE90EA00084BE3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292193552CBE90EA00084BE3 /* Day.swift */; };
+		292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
+		29BA08E22CBC369100C7A7BA /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
+		29BA08E52CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
+		29BA08E62CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
+		29BA08E92CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */; };
+		29BA08EA2CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */; };
 		D03EBE082CB993E800BAA865 /* frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE072CB993E800BAA865 /* frontendApp.swift */; };
 		D03EBE0C2CB993E900BAA865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE0B2CB993E900BAA865 /* Assets.xcassets */; };
 		D03EBE0F2CB993E900BAA865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE0E2CB993E900BAA865 /* Preview Assets.xcassets */; };
 		D03EBE1A2CB99A6400BAA865 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE192CB99A6400BAA865 /* .gitignore */; };
 		D03EBE262CB99D3F00BAA865 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE252CB99D3F00BAA865 /* User.swift */; };
 		D03EBE282CB99D5200BAA865 /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE272CB99D5200BAA865 /* Grade.swift */; };
-		D03EBE2A2CB99D5B00BAA865 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE292CB99D5B00BAA865 /* Schedule.swift */; };
 		D03EBE2C2CB99D7C00BAA865 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE2B2CB99D7C00BAA865 /* AuthViewModel.swift */; };
 		D03EBE2E2CB99D8E00BAA865 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE2D2CB99D8E00BAA865 /* HomeViewModel.swift */; };
 		D03EBE302CB99DA600BAA865 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE2F2CB99DA600BAA865 /* ScheduleViewModel.swift */; };
@@ -60,6 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonComponentView.swift; sourceTree = "<group>"; };
+		292193552CBE90EA00084BE3 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day.swift; path = frontend/Models/Day.swift; sourceTree = SOURCE_ROOT; };
+		29BA08E12CBC369100C7A7BA /* DateComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentView.swift; sourceTree = "<group>"; };
+		29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		29BA08E72CBC528500C7A7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekComponentView.swift; sourceTree = "<group>"; };
 		D03EBE042CB993E800BAA865 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03EBE072CB993E800BAA865 /* frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendApp.swift; sourceTree = "<group>"; };
 		D03EBE0B2CB993E900BAA865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +82,6 @@
 		D03EBE192CB99A6400BAA865 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = frontend/.gitignore; sourceTree = "<group>"; };
 		D03EBE252CB99D3F00BAA865 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D03EBE272CB99D5200BAA865 /* Grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
-		D03EBE292CB99D5B00BAA865 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		D03EBE2B2CB99D7C00BAA865 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D03EBE2D2CB99D8E00BAA865 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D03EBE2F2CB99DA600BAA865 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +124,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2921932F2CBE8C9400084BE3 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				292193552CBE90EA00084BE3 /* Day.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		29BA08E02CBC366400C7A7BA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				29BA08E12CBC369100C7A7BA /* DateComponentView.swift */,
+				29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */,
+				291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		29BA08E32CBC38AE00C7A7BA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D03EBDFB2CB993E800BAA865 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +173,7 @@
 		D03EBE062CB993E800BAA865 /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				29BA08E72CBC528500C7A7BA /* Info.plist */,
 				D03EBE1B2CB99BEA00BAA865 /* Models */,
 				D03EBE242CB99CAC00BAA865 /* Views */,
 				D03EBE1C2CB99CAC00BAA865 /* ViewModels */,
@@ -155,9 +196,9 @@
 		D03EBE1B2CB99BEA00BAA865 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2921932F2CBE8C9400084BE3 /* Schedule */,
 				D03EBE252CB99D3F00BAA865 /* User.swift */,
 				D03EBE272CB99D5200BAA865 /* Grade.swift */,
-				D03EBE292CB99D5B00BAA865 /* Schedule.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -177,6 +218,7 @@
 		D03EBE1D2CB99CAC00BAA865 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				29BA08E32CBC38AE00C7A7BA /* Fonts */,
 				D03EBE0B2CB993E900BAA865 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -227,6 +269,7 @@
 		D03EBE232CB99CAC00BAA865 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				29BA08E02CBC366400C7A7BA /* components */,
 				D03EBE392CB99E1A00BAA865 /* ScheduleView.swift */,
 			);
 			path = Schedule;
@@ -347,6 +390,7 @@
 			files = (
 				D03EBE0F2CB993E900BAA865 /* Preview Assets.xcassets in Resources */,
 				D03EBE1A2CB99A6400BAA865 /* .gitignore in Resources */,
+				29BA08E52CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */,
 				D03EBE0C2CB993E900BAA865 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BA08E62CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */,
 				D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +413,11 @@
 			files = (
 				D03EBE282CB99D5200BAA865 /* Grade.swift in Sources */,
 				D03EBE3C2CB99E2700BAA865 /* ProfileView.swift in Sources */,
+				29BA08E22CBC369100C7A7BA /* DateComponentView.swift in Sources */,
 				D03EBE442CB99E7300BAA865 /* GradesService.swift in Sources */,
 				D03EBE3E2CB99E3D00BAA865 /* GradesView.swift in Sources */,
 				D03EBE342CB99DC400BAA865 /* GradesViewModel.swift in Sources */,
+				29BA08E92CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */,
 				D03EBE2E2CB99D8E00BAA865 /* HomeViewModel.swift in Sources */,
 				D03EBE322CB99DB500BAA865 /* ProfileViewModel.swift in Sources */,
 				D03EBE302CB99DA600BAA865 /* ScheduleViewModel.swift in Sources */,
@@ -379,9 +426,10 @@
 				D03EBE082CB993E800BAA865 /* frontendApp.swift in Sources */,
 				D03EBE362CB99DDB00BAA865 /* LoginView.swift in Sources */,
 				D03EBE382CB99DEB00BAA865 /* HomeView.swift in Sources */,
+				292193562CBE90EA00084BE3 /* Day.swift in Sources */,
 				D03EBE402CB99E5600BAA865 /* AuthService.swift in Sources */,
-				D03EBE2A2CB99D5B00BAA865 /* Schedule.swift in Sources */,
 				D03EBE422CB99E6500BAA865 /* ScheduleService.swift in Sources */,
+				291FA73B2CC55CAA00747E7C /* LessonComponentView.swift in Sources */,
 				D03EBE262CB99D3F00BAA865 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +438,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BA08EA2CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */,
 				D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */,
+				292193572CBE90EA00084BE3 /* Day.swift in Sources */,
+				292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */,
+				291FA73C2CC55CAA00747E7C /* LessonComponentView.swift in Sources */,
 				D03EBE512CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +588,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = frontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -565,6 +618,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"frontend/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = frontend/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

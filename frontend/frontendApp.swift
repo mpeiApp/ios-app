@@ -20,6 +20,7 @@ struct frontendApp: App {
                         VStack {
                             selectedTab == 0 ? Image("homeIconActive") : Image("homeIcon")
                             Text("Главная")
+                                .font(.custom("Inter-Regular_Bold", size: 18))
                         }
                     }
                     .tag(0)
@@ -28,6 +29,7 @@ struct frontendApp: App {
                         VStack {
                             selectedTab == 0 ? Image("scheduleIcon") : Image("scheduleIconActive")
                             Text("Расписание")
+                                .font(.custom("Inter-Regular_Regular", size: 18))
                         }
                     }
                     .tag(1)
