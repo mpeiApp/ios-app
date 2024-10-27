@@ -53,7 +53,6 @@ struct frontendApp: App {
                     .tag(3)
             }
             .accentColor(.accentColor)
-            
         }
     }
 }

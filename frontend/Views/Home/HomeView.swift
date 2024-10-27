@@ -11,10 +11,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+            Image("dropDownIcon")
             Text("Hello, world!")
+                .font(.custom("Inter-Regular_Bold", size: 20))
         }
         .padding()
     }

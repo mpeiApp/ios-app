@@ -45,6 +45,11 @@
 		D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */; };
 		D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE542CB9B21F00BAA865 /* Assets.xcassets */; };
 		D03EBE592CB9B21F00BAA865 /* ScheduleWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D03EBE492CB9B21D00BAA865 /* ScheduleWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D06530C42CC2BC4400C546E2 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06530C32CC2BC4400C546E2 /* Inter.ttf */; };
+		D06530C52CC2BC4400C546E2 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06530C32CC2BC4400C546E2 /* Inter.ttf */; };
+		D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E32F2CC6C9F300A8F981 /* SubjectView.swift */; };
+		D076E3322CC6CA1600A8F981 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */; };
+		D076E3342CC6CA5B00A8F981 /* GradeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E3332CC6CA5B00A8F981 /* GradeRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +112,11 @@
 		D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidgets.swift; sourceTree = "<group>"; };
 		D03EBE542CB9B21F00BAA865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03EBE562CB9B21F00BAA865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06530C32CC2BC4400C546E2 /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		D06530C62CC2BCFE00C546E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D076E32F2CC6C9F300A8F981 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		D076E3332CC6CA5B00A8F981 /* GradeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +279,9 @@
 			isa = PBXGroup;
 			children = (
 				D03EBE3D2CB99E3D00BAA865 /* GradesView.swift */,
+				D076E3332CC6CA5B00A8F981 /* GradeRowView.swift */,
+				D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */,
+				D076E32F2CC6C9F300A8F981 /* SubjectView.swift */,
 			);
 			path = Grades;
 			sourceTree = "<group>";
@@ -328,6 +341,14 @@
 				D03EBE562CB9B21F00BAA865 /* Info.plist */,
 			);
 			path = ScheduleWidgets;
+			sourceTree = "<group>";
+		};
+		D06530C22CC2BC2D00C546E2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D06530C32CC2BC4400C546E2 /* Inter.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,8 +463,11 @@
 				D03EBE3E2CB99E3D00BAA865 /* GradesView.swift in Sources */,
 				D03EBE342CB99DC400BAA865 /* GradesViewModel.swift in Sources */,
 				29BA08E92CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */,
+				D076E3322CC6CA1600A8F981 /* TableHeaderView.swift in Sources */,
 				D03EBE2E2CB99D8E00BAA865 /* HomeViewModel.swift in Sources */,
+				D076E3342CC6CA5B00A8F981 /* GradeRowView.swift in Sources */,
 				D03EBE322CB99DB500BAA865 /* ProfileViewModel.swift in Sources */,
+				D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */,
 				D03EBE302CB99DA600BAA865 /* ScheduleViewModel.swift in Sources */,
 				D03EBE3A2CB99E1A00BAA865 /* ScheduleView.swift in Sources */,
 				D03EBE2C2CB99D7C00BAA865 /* AuthViewModel.swift in Sources */,
