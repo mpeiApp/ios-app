@@ -60,6 +60,7 @@ struct ScheduleView: View {
                 }
                 .padding(.trailing, 25)
             }
+            .padding(.top)
             
             WeeksScrollComponentView(weeks: weeksSemester, activeIndex: $activeIndex, currentPage: $currentPage)
             

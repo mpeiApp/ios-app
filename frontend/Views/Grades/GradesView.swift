@@ -38,13 +38,22 @@ struct GradesView: View {
     
     var body: some View {
         VStack {
-            HStack (alignment: .center){
-                Text("Осень 2024")
-                    .font(.custom("Inter-Regular_Bold", size: 18))
-                    .foregroundColor(Color("AccentColor"))
-                Image("dropDownIcon")
+            ZStack {
+                HStack (alignment: .center){
+                    Text("Осень 2024")
+                        .font(.custom("Inter-Regular_Bold", size: 18))
+                        .foregroundColor(Color("AccentColor"))
+                }
+                .padding()
+                
+                HStack{
+                    Spacer()
+                    Image("dropDownIcon")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                }
+                .padding(.trailing, 25)
             }
-            .padding()
             Divider()
          
             ScrollView {
@@ -64,3 +73,4 @@ struct GradesView_Previews: PreviewProvider {
         GradesView()
     }
 }
+
