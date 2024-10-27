@@ -21,20 +21,23 @@ struct LessonComponentView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text("\(lessonNumber). \(lessonName)")
-                    .font(.custom("Inter-Regular_SemiBold", size: 18))
+                    .font(.custom("Inter-Regular_SemiBold", size: 16))
                     .padding(.leading, 15)
                 Spacer()
                 Text("\(lessonAuditorium)")
-                    .font(.custom("Inter-Regular_SemiBold", size: 16))
+                    .font(.custom("Inter-Regular_SemiBold", size: 14))
                     .padding(.trailing, 15)
                     .foregroundStyle(Color("secondaryColor"))
+                
             }
+            .padding(.bottom, 0.1)
             Text("\(lessonBeginTime) - \(lessonEndTime) · \(lessonType)")
-                .font(.custom("Inter-Regular_Medium", size: 14))
+                .font(.custom("Inter-Regular_Medium", size: 12))
+                
                 .padding(.leading, 35)
                 .foregroundStyle(Color("secondaryColor"))
             Text("\(lessonLecturer)")
-                .font(.custom("Inter-Regular_Medium", size: 14))
+                .font(.custom("Inter-Regular_Medium", size: 12))
                 .padding(.leading, 35)
                 .foregroundStyle(Color("secondaryColor"))
         }

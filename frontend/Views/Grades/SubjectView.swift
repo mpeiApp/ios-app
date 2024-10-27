@@ -39,7 +39,6 @@ struct SubjectView: View {
                     Text(subject.examinationType)
                         .font(.custom("Inter-Regular_Medium", size: 12))
                         .foregroundColor(Color("secondaryColor"))
-                        .padding(.bottom, 1)
                     Text(subject.teacher)
                         .font(.custom("Inter-Regular_Medium", size: 12))
                         .foregroundColor(Color("secondaryColor"))
