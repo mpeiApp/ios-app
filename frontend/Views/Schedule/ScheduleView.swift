@@ -10,6 +10,40 @@ import SwiftUI
 
 struct ScheduleView: View {
     
+    var firstMonday: Date
+    var lastMonday: Date
+    let weeksSemester: [[Date]]
+    
+    var today: Date = Date()
+    
+    @State  var activeIndex: Int
+    @State  var currentPage: Int
+    
+    init() {
+        firstMonday = getMonday(day: "2024-09-02")
+        lastMonday = getMonday(day: "2024-12-31")
+        weeksSemester = getWeeksSemester(firstMonday: firstMonday, lastMonday: lastMonday)
+        
+        // Инициализация activeIndex и currentPage для сегодняшнего дня
+        var tempActiveIndex = 0
+        var tempCurrentPage = 0
+        
+        for (weekIndex, week) in weeksSemester.enumerated() {
+            if let dayIndex = week.firstIndex(where: { Calendar.current.isDate($0, inSameDayAs: Date()) }) {
+                tempActiveIndex = weekIndex * 7 + dayIndex
+                tempCurrentPage = weekIndex
+                break
+            }
+        }
+        
+        _activeIndex = State(initialValue: tempActiveIndex)
+        _currentPage = State(initialValue: tempCurrentPage)
+        
+        weeksSemester.forEach { week in
+            print(week)
+        }
+    }
+    
     var body: some View {
         VStack() {
             ZStack {
@@ -26,7 +60,9 @@ struct ScheduleView: View {
                 }
                 .padding(.trailing, 25)
             }
-            WeekComponentView()
+            
+            WeeksScrollComponentView(weeks: weeksSemester, activeIndex: $activeIndex, currentPage: $currentPage)
+            
             LessonComponentView(
                 lessonNumber: 2,
                 lessonName: "Компьютерная графика",
@@ -45,6 +81,11 @@ struct ScheduleView: View {
                 lessonType: "Лабораторная",
                 lessonLecturer: "Мааран М.М.")
             .padding(.bottom, 20)
+            if (activeIndex / 7 < weeksSemester.count && activeIndex / 7 > -1 && weeksSemester[activeIndex / 7].count != 0) {
+                Text("Selected day: \(weeksSemester[activeIndex / 7][activeIndex % 7])")
+                    .font(.headline)
+                    .padding()
+            }
             Spacer()
         }
 

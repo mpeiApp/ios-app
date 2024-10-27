@@ -9,32 +9,25 @@ import SwiftUI
 
 struct WeekComponentView: View {
     
-    let currentWeek: [Day] =
-    [
-        Day(dayOfWeek: "Пн", day: 1, month: "Февраль", isActive: false),
-        Day(dayOfWeek: "Вт", day: 2, month: "Февраль", isActive: true),
-        Day(dayOfWeek: "Пн", day: 1, month: "Февраль", isActive: false),
-        Day(dayOfWeek: "Вт", day: 2, month: "Февраль", isActive: false),
-        Day(dayOfWeek: "Пн", day: 1, month: "Февраль", isActive: false),
-        Day(dayOfWeek: "Вт", day: 2, month: "Февраль", isActive: false),
-        Day(dayOfWeek: "Пн", day: 1, month: "Февраль", isActive: false),
-    ]
+    let week: [Date]
+    let weekStartIndex: Int
+    @Binding var activeIndex: Int
+    
     var body: some View {
 
-        HStack(spacing: 20) {
-            ForEach(currentWeek.indices, id: \.self) { index in
-                            DateComponentView(dayOfWeek: currentWeek[index].dayOfWeek, day: currentWeek[index].day, month: currentWeek[index].month, isActive: currentWeek[index].isActive)
-                            
-                            // Проверка, является ли текущий индекс последним
-                            
-                        }
+        HStack(spacing: 10) {
+            ForEach(week.indices, id: \.self) { dayIndex in
+                let globalDayIndex = weekStartIndex + dayIndex
+                DateComponentView(day: week[dayIndex], isActive: activeIndex == globalDayIndex) {
+                    activeIndex = globalDayIndex
+                }
+            }
         }
-        .frame(maxWidth: .infinity)
         .padding()
         
     }
 }
 
-#Preview {
-    WeekComponentView()
-}
+//#Preview {
+//    WeekComponentView()
+//}

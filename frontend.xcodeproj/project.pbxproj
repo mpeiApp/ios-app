@@ -12,6 +12,9 @@
 		292193562CBE90EA00084BE3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292193552CBE90EA00084BE3 /* Day.swift */; };
 		292193572CBE90EA00084BE3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292193552CBE90EA00084BE3 /* Day.swift */; };
 		292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
+		297F9D6D2CCA51D9002E41C3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F9D6C2CCA51D9002E41C3 /* utils.swift */; };
+		297F9D6E2CCA51DB002E41C3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F9D6C2CCA51D9002E41C3 /* utils.swift */; };
+		29965F532CC6B34500C43998 /* WeeksScrollComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29965F522CC6B34500C43998 /* WeeksScrollComponentView.swift */; };
 		29BA08E22CBC369100C7A7BA /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
 		29BA08E52CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
 		29BA08E62CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
@@ -71,6 +74,8 @@
 /* Begin PBXFileReference section */
 		291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonComponentView.swift; sourceTree = "<group>"; };
 		292193552CBE90EA00084BE3 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Day.swift; path = frontend/Models/Day.swift; sourceTree = SOURCE_ROOT; };
+		297F9D6C2CCA51D9002E41C3 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		29965F522CC6B34500C43998 /* WeeksScrollComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScrollComponentView.swift; sourceTree = "<group>"; };
 		29BA08E12CBC369100C7A7BA /* DateComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentView.swift; sourceTree = "<group>"; };
 		29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
 		29BA08E72CBC528500C7A7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -132,12 +137,29 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		297F9D6A2CCA514B002E41C3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				297F9D6B2CCA516E002E41C3 /* Schedule */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		297F9D6B2CCA516E002E41C3 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				297F9D6C2CCA51D9002E41C3 /* utils.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
 		29BA08E02CBC366400C7A7BA /* components */ = {
 			isa = PBXGroup;
 			children = (
 				29BA08E12CBC369100C7A7BA /* DateComponentView.swift */,
 				29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */,
 				291FA73A2CC55CAA00747E7C /* LessonComponentView.swift */,
+				29965F522CC6B34500C43998 /* WeeksScrollComponentView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -173,6 +195,7 @@
 		D03EBE062CB993E800BAA865 /* frontend */ = {
 			isa = PBXGroup;
 			children = (
+				297F9D6A2CCA514B002E41C3 /* utils */,
 				29BA08E72CBC528500C7A7BA /* Info.plist */,
 				D03EBE1B2CB99BEA00BAA865 /* Models */,
 				D03EBE242CB99CAC00BAA865 /* Views */,
@@ -412,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03EBE282CB99D5200BAA865 /* Grade.swift in Sources */,
+				297F9D6D2CCA51D9002E41C3 /* utils.swift in Sources */,
 				D03EBE3C2CB99E2700BAA865 /* ProfileView.swift in Sources */,
 				29BA08E22CBC369100C7A7BA /* DateComponentView.swift in Sources */,
 				D03EBE442CB99E7300BAA865 /* GradesService.swift in Sources */,
@@ -424,6 +448,7 @@
 				D03EBE3A2CB99E1A00BAA865 /* ScheduleView.swift in Sources */,
 				D03EBE2C2CB99D7C00BAA865 /* AuthViewModel.swift in Sources */,
 				D03EBE082CB993E800BAA865 /* frontendApp.swift in Sources */,
+				29965F532CC6B34500C43998 /* WeeksScrollComponentView.swift in Sources */,
 				D03EBE362CB99DDB00BAA865 /* LoginView.swift in Sources */,
 				D03EBE382CB99DEB00BAA865 /* HomeView.swift in Sources */,
 				292193562CBE90EA00084BE3 /* Day.swift in Sources */,
@@ -439,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BA08EA2CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */,
+				297F9D6E2CCA51DB002E41C3 /* utils.swift in Sources */,
 				D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */,
 				292193572CBE90EA00084BE3 /* Day.swift in Sources */,
 				292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */,

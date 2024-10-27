@@ -25,8 +25,9 @@ struct LessonComponentView: View {
                     .padding(.leading, 15)
                 Spacer()
                 Text("\(lessonAuditorium)")
-                    .font(.custom("Inter-Regular_SemiBold", size: 18))
+                    .font(.custom("Inter-Regular_SemiBold", size: 16))
                     .padding(.trailing, 15)
+                    .foregroundStyle(Color("secondaryColor"))
             }
             Text("\(lessonBeginTime) - \(lessonEndTime) · \(lessonType)")
                 .font(.custom("Inter-Regular_Medium", size: 14))

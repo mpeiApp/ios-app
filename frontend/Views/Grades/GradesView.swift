@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct GradesView: View {
+    var body: some View {
+        Text("Grades")
+    }
+}
+
+#Preview {
+    GradesView()
+}
+
+
+
