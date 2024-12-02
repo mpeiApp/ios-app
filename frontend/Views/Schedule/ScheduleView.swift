@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ScheduleView: View {
     
+    @StateObject private var networkManager = ScheduleNetworkManager()
+    
     var firstMonday: Date
     var lastMonday: Date
     let weeksSemester: [[Date]]
@@ -39,9 +41,9 @@ struct ScheduleView: View {
         _activeIndex = State(initialValue: tempActiveIndex)
         _currentPage = State(initialValue: tempCurrentPage)
         
-        weeksSemester.forEach { week in
-            print(week)
-        }
+//        weeksSemester.forEach { week in
+//            print(week)
+//        }
     }
     
     var body: some View {
@@ -64,33 +66,39 @@ struct ScheduleView: View {
             
             WeeksScrollComponentView(weeks: weeksSemester, activeIndex: $activeIndex, currentPage: $currentPage)
             
-            LessonComponentView(
-                lessonNumber: 2,
-                lessonName: "Компьютерная графика",
-                lessonAuditorium: "М-706",
-                lessonBeginTime: "11:10",
-                lessonEndTime: "12:45",
-                lessonType: "Лабораторная",
-                lessonLecturer: "Бартьеньев О.В.")
-            .padding(.bottom, 20)
-            LessonComponentView(
-                lessonNumber: 3,
-                lessonName: "Программная инженерия",
-                lessonAuditorium: "М-708",
-                lessonBeginTime: "13:45",
-                lessonEndTime: "15:20",
-                lessonType: "Лабораторная",
-                lessonLecturer: "Мааран М.М.")
-            .padding(.bottom, 20)
-            if (activeIndex / 7 < weeksSemester.count && activeIndex / 7 > -1 && weeksSemester[activeIndex / 7].count != 0) {
-                Text("Selected day: \(weeksSemester[activeIndex / 7][activeIndex % 7])")
-                    .font(.headline)
-                    .padding()
+            if let schedule = networkManager.scheduleData {
+                
+                if let lessons = schedule.data[formatDateToString(weeksSemester[activeIndex / 7][activeIndex % 7])]
+                {
+                    ForEach(lessons) { lesson in
+                        LessonComponentView(
+                            lessonNumber: lesson.lessonNumber,
+                            lessonName: lesson.discipline,
+                            lessonAuditorium: lesson.auditorium,
+                            lessonBeginTime: lesson.time_begin,
+                            lessonEndTime: lesson.time_end,
+                            lessonType: lesson.kindOfWork,
+                            lessonLecturer: lesson.lecturer)
+                        .padding(.bottom, 20)
+                    }
+                }
+                
+                
+            }
+            else {
+                Text("Loading...")
             }
             Spacer()
+            
         }
+        .onAppear {
+            networkManager.fetchSchedule(groupId: "18032", startDate: "2024.09.01", endDate: "2024.12.31")
+            
+        }
+        
 
     }
+        
 }
 
 #Preview {

@@ -32,6 +32,7 @@ class ScheduleNetworkManager: ObservableObject {
                 DispatchQueue.main.async {
                     self.scheduleData = decodedResponse
                 }
+                print(decodedResponse)
             } catch {
                 print("Error decoding data: \(error)")
             }

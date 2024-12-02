@@ -82,3 +82,9 @@ func parseDate(date: Date) -> (String, String, String) {
     return (dayOfWeekInRussian, day, monthInRussian)
 }
 
+
+func formatDateToString(_ date: Date) -> String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy.MM.dd" // Формат даты
+    return formatter.string(from: date)
+}

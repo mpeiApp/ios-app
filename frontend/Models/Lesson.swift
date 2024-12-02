@@ -18,4 +18,5 @@ struct Lesson: Codable, Identifiable {
     let kindOfWork: String
     let lecturer: String
     let group_id: String
+    let lessonNumber: Int
 }
