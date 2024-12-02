@@ -11,11 +11,21 @@ struct Grade: Codable, Identifiable {
     var id = UUID();
     var name: String;
     var weight: Int32;
-    var dateStart: Date;
-    var dateEnd: Date;
+    var dateStart: String?;
+    var dateEnd: String;
     var weekNumber: Int32;
-    var mark: Int32;
-    var markDate: Date;
+    var mark: Int32?;
+    var markDate: String?;
+    
+    enum CodingKeys: String, CodingKey {
+            case name
+            case weight
+            case dateStart
+            case dateEnd
+            case weekNumber
+            case mark
+            case markDate
+        }
 }
 
 struct Subject: Codable, Identifiable {
@@ -25,4 +35,12 @@ struct Subject: Codable, Identifiable {
     var averageGrade: Double;
     var examinationType: String;
     var gradeList: [Grade];
+    
+    enum CodingKeys: String, CodingKey {
+            case name
+            case teacher
+            case averageGrade
+            case examinationType
+            case gradeList
+        }
 }

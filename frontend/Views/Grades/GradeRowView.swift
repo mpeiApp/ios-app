@@ -29,14 +29,21 @@ struct GradeRowView: View {
                 .fixedSize(horizontal: true, vertical: false)
             
             // Дата
-            Text("\(grade.weekNumber) неделя\n\(dateFormatter.string(from: grade.dateStart))-\n\(dateFormatter.string(from: grade.dateEnd))")
-                .font(.custom("Inter-Regular_Medium", size: 10))
-                .foregroundColor(Color("AccentColor"))
-                .frame(minWidth: 50, maxWidth: 130, alignment: .leading)
-                .layoutPriority(1)
+            Text(
+                "\(grade.weekNumber) неделя\n" +
+                "(\(grade.dateStart != nil ?  grade.dateStart! + "-\n" : "")" +
+                "\(grade.dateEnd))"
+            )
+            .font(.custom("Inter-Regular_Medium", size: 10))
+            .foregroundColor(Color("AccentColor"))
+            .frame(minWidth: 50, maxWidth: 130, alignment: .leading)
+            .layoutPriority(1)
             
             // Оценка
-            Text("\(grade.mark)\n(\(dateFormatter.string(from: grade.markDate)))")
+            Text(
+                "\(grade.mark != nil ? String(grade.mark!) : "")\n" +
+                "\(grade.markDate != nil ? "(" + grade.markDate! + ")" : "")"
+            )
                 .font(.custom("Inter-Regular_Medium", size: 10))
                 .foregroundColor(Color("AccentColor"))
                 .frame(minWidth: 60, maxWidth: 130, alignment: .leading)

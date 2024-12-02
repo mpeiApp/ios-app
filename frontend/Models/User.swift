@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class StudentInfo: Codable {
+    var login: String
+    var name: String
+    var surname: String
+    var groupNumber: String
+}
+
+class PersonGradesInfo: Codable {
+    var studentInfo: StudentInfo
+    var subjects: [Subject]
+}

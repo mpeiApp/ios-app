@@ -38,6 +38,7 @@
 		D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E32F2CC6C9F300A8F981 /* SubjectView.swift */; };
 		D076E3322CC6CA1600A8F981 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */; };
 		D076E3342CC6CA5B00A8F981 /* GradeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E3332CC6CA5B00A8F981 /* GradeRowView.swift */; };
+		D0897F092CFDF36D00FEA4B9 /* GradesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0897F082CFDF36D00FEA4B9 /* GradesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		D076E32F2CC6C9F300A8F981 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		D076E3332CC6CA5B00A8F981 /* GradeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeRowView.swift; sourceTree = "<group>"; };
+		D0897F082CFDF36D00FEA4B9 /* GradesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				D03EBE252CB99D3F00BAA865 /* User.swift */,
 				D03EBE272CB99D5200BAA865 /* Grade.swift */,
 				D03EBE292CB99D5B00BAA865 /* Schedule.swift */,
+				D0897F082CFDF36D00FEA4B9 /* GradesResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				D076E3322CC6CA1600A8F981 /* TableHeaderView.swift in Sources */,
 				D03EBE2E2CB99D8E00BAA865 /* HomeViewModel.swift in Sources */,
 				D076E3342CC6CA5B00A8F981 /* GradeRowView.swift in Sources */,
+				D0897F092CFDF36D00FEA4B9 /* GradesResponse.swift in Sources */,
 				D03EBE322CB99DB500BAA865 /* ProfileViewModel.swift in Sources */,
 				D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */,
 				D03EBE302CB99DA600BAA865 /* ScheduleViewModel.swift in Sources */,
