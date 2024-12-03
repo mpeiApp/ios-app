@@ -58,7 +58,16 @@ struct ScheduleView: View {
                     Spacer()
                     Image("calendarIcon")
                         .resizable()
-                        .frame(width: 20, height: 20) //
+                        .frame(width: 20, height: 20)
+                        .onTapGesture {
+                            if let storedUsername = UserDefaults.standard.string(forKey: "username"),
+                               let storedPassword = UserDefaults.standard.string(forKey: "password"),
+                               let storedResponseData = UserDefaults.standard.value(forKey: "group_id") as? Int {
+                                print("Username: \(storedUsername)")
+                                print("Password: \(storedPassword)")
+                                print("Response Data: \(storedResponseData)")
+                            }
+                        }
                 }
                 .padding(.trailing, 25)
             }
@@ -92,7 +101,11 @@ struct ScheduleView: View {
             
         }
         .onAppear {
-            networkManager.fetchSchedule(groupId: "18032", startDate: "2024.09.01", endDate: "2024.12.31")
+            if let storedResponseData = UserDefaults.standard.value(forKey: "group_id") as? Int {
+                let groupIdString = String(storedResponseData)
+                networkManager.fetchSchedule(groupId: groupIdString, startDate: "2024.09.01", endDate: "2024.12.31")
+            }
+            
             
         }
         

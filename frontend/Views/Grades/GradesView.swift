@@ -43,7 +43,11 @@ struct GradesView: View {
             }
         }
         .onAppear {
-            networkManager.fetchGrades(username: "GusakAN")
+            if let storedUsername = UserDefaults.standard.value(forKey: "username") as? String {
+                networkManager.fetchGrades(username: storedUsername)
+            }
+                
+
         }
     }
 }

@@ -14,16 +14,22 @@
 		292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
 		297F9D6D2CCA51D9002E41C3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F9D6C2CCA51D9002E41C3 /* utils.swift */; };
 		297F9D6E2CCA51DB002E41C3 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297F9D6C2CCA51D9002E41C3 /* utils.swift */; };
-		29858C722CFDCDE100DD9F72 /* SceduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858C712CFDCDE100DD9F72 /* SceduleResponse.swift */; };
-		29858C732CFDCDE100DD9F72 /* SceduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858C712CFDCDE100DD9F72 /* SceduleResponse.swift */; };
-		29858C752CFDCE0100DD9F72 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858C742CFDCE0100DD9F72 /* Lesson.swift */; };
-		29858C762CFDCE0100DD9F72 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29858C742CFDCE0100DD9F72 /* Lesson.swift */; };
 		29965F532CC6B34500C43998 /* WeeksScrollComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29965F522CC6B34500C43998 /* WeeksScrollComponentView.swift */; };
+		29B7BC542CFF76B4001FF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B7BC532CFF76B4001FF12E /* Assets.xcassets */; };
+		29B7BC552CFF76B4001FF12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B7BC532CFF76B4001FF12E /* Assets.xcassets */; };
+		29B7BC582CFF7AEA001FF12E /* TextInputComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7BC572CFF7AEA001FF12E /* TextInputComponentView.swift */; };
+		29B7BC592CFF7AEA001FF12E /* TextInputComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7BC572CFF7AEA001FF12E /* TextInputComponentView.swift */; };
+		29B7BC5B2CFF9162001FF12E /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7BC5A2CFF9162001FF12E /* AuthResponse.swift */; };
+		29B7BC5C2CFF9162001FF12E /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B7BC5A2CFF9162001FF12E /* AuthResponse.swift */; };
 		29BA08E22CBC369100C7A7BA /* DateComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E12CBC369100C7A7BA /* DateComponentView.swift */; };
 		29BA08E52CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
 		29BA08E62CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */; };
 		29BA08E92CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */; };
 		29BA08EA2CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */; };
+		29BD69EA2CFF258C00E9C2C3 /* SceduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD69E82CFF258C00E9C2C3 /* SceduleResponse.swift */; };
+		29BD69EB2CFF258C00E9C2C3 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD69E92CFF258C00E9C2C3 /* Lesson.swift */; };
+		29BD69EC2CFF259D00E9C2C3 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD69E92CFF258C00E9C2C3 /* Lesson.swift */; };
+		29BD69ED2CFF25A000E9C2C3 /* SceduleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD69E82CFF258C00E9C2C3 /* SceduleResponse.swift */; };
 		D03EBE082CB993E800BAA865 /* frontendApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE072CB993E800BAA865 /* frontendApp.swift */; };
 		D03EBE0C2CB993E900BAA865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE0B2CB993E900BAA865 /* Assets.xcassets */; };
 		D03EBE0F2CB993E900BAA865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE0E2CB993E900BAA865 /* Preview Assets.xcassets */; };
@@ -47,7 +53,6 @@
 		D03EBE4E2CB9B21D00BAA865 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03EBE4D2CB9B21D00BAA865 /* SwiftUI.framework */; };
 		D03EBE512CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE502CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift */; };
 		D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */; };
-		D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03EBE542CB9B21F00BAA865 /* Assets.xcassets */; };
 		D03EBE592CB9B21F00BAA865 /* ScheduleWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D03EBE492CB9B21D00BAA865 /* ScheduleWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E32F2CC6C9F300A8F981 /* SubjectView.swift */; };
 		D076E3322CC6CA1600A8F981 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */; };
@@ -86,10 +91,15 @@
 		29858C712CFDCDE100DD9F72 /* SceduleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceduleResponse.swift; sourceTree = "<group>"; };
 		29858C742CFDCE0100DD9F72 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		29965F522CC6B34500C43998 /* WeeksScrollComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScrollComponentView.swift; sourceTree = "<group>"; };
+		29B7BC532CFF76B4001FF12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = frontend/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		29B7BC572CFF7AEA001FF12E /* TextInputComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputComponentView.swift; sourceTree = "<group>"; };
+		29B7BC5A2CFF9162001FF12E /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		29BA08E12CBC369100C7A7BA /* DateComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateComponentView.swift; sourceTree = "<group>"; };
 		29BA08E42CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
 		29BA08E72CBC528500C7A7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		29BA08E82CBC5BF400C7A7BA /* WeekComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekComponentView.swift; sourceTree = "<group>"; };
+		29BD69E82CFF258C00E9C2C3 /* SceduleResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceduleResponse.swift; sourceTree = "<group>"; };
+		29BD69E92CFF258C00E9C2C3 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		D03EBE042CB993E800BAA865 /* frontend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = frontend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03EBE072CB993E800BAA865 /* frontendApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frontendApp.swift; sourceTree = "<group>"; };
 		D03EBE0B2CB993E900BAA865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,7 +125,6 @@
 		D03EBE4D2CB9B21D00BAA865 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D03EBE502CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidgetsBundle.swift; sourceTree = "<group>"; };
 		D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleWidgets.swift; sourceTree = "<group>"; };
-		D03EBE542CB9B21F00BAA865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03EBE562CB9B21F00BAA865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D076E32F2CC6C9F300A8F981 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		D076E3312CC6CA1600A8F981 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
@@ -167,6 +176,14 @@
 			path = Schedule;
 			sourceTree = "<group>";
 		};
+		29B7BC562CFF7A8F001FF12E /* components */ = {
+			isa = PBXGroup;
+			children = (
+				29B7BC572CFF7AEA001FF12E /* TextInputComponentView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		29BA08E02CBC366400C7A7BA /* components */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +203,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		29BD69E72CFF251B00E9C2C3 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				29858C712CFDCDE100DD9F72 /* SceduleResponse.swift */,
+				29858C742CFDCE0100DD9F72 /* Lesson.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D03EBDFB2CB993E800BAA865 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +220,7 @@
 				D03EBE4F2CB9B21D00BAA865 /* ScheduleWidgets */,
 				D03EBE4A2CB9B21D00BAA865 /* Frameworks */,
 				D03EBE052CB993E800BAA865 /* Products */,
+				29BD69E72CFF251B00E9C2C3 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,11 +260,13 @@
 		D03EBE1B2CB99BEA00BAA865 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				29BD69E92CFF258C00E9C2C3 /* Lesson.swift */,
+				29BD69E82CFF258C00E9C2C3 /* SceduleResponse.swift */,
 				2921932F2CBE8C9400084BE3 /* Schedule */,
 				D03EBE252CB99D3F00BAA865 /* User.swift */,
 				D03EBE272CB99D5200BAA865 /* Grade.swift */,
-				D03EBE292CB99D5B00BAA865 /* Schedule.swift */,
 				D0897F082CFDF36D00FEA4B9 /* GradesResponse.swift */,
+				29B7BC5A2CFF9162001FF12E /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,6 +305,7 @@
 		D03EBE1F2CB99CAC00BAA865 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				29B7BC562CFF7A8F001FF12E /* components */,
 				D03EBE352CB99DDB00BAA865 /* LoginView.swift */,
 			);
 			path = Auth;
@@ -341,9 +371,9 @@
 		D03EBE4F2CB9B21D00BAA865 /* ScheduleWidgets */ = {
 			isa = PBXGroup;
 			children = (
+				29B7BC532CFF76B4001FF12E /* Assets.xcassets */,
 				D03EBE502CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift */,
 				D03EBE522CB9B21D00BAA865 /* ScheduleWidgets.swift */,
-				D03EBE542CB9B21F00BAA865 /* Assets.xcassets */,
 				D03EBE562CB9B21F00BAA865 /* Info.plist */,
 			);
 			path = ScheduleWidgets;
@@ -434,6 +464,7 @@
 				D03EBE1A2CB99A6400BAA865 /* .gitignore in Resources */,
 				29BA08E52CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */,
 				D03EBE0C2CB993E900BAA865 /* Assets.xcassets in Resources */,
+				29B7BC542CFF76B4001FF12E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29BA08E62CBC393800C7A7BA /* Inter-VariableFont_opsz,wght.ttf in Resources */,
-				D03EBE552CB9B21F00BAA865 /* Assets.xcassets in Resources */,
+				29B7BC552CFF76B4001FF12E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,11 +499,11 @@
 				D03EBE322CB99DB500BAA865 /* ProfileViewModel.swift in Sources */,
 				D076E3302CC6C9F300A8F981 /* SubjectView.swift in Sources */,
 				D03EBE302CB99DA600BAA865 /* ScheduleViewModel.swift in Sources */,
-				29858C722CFDCDE100DD9F72 /* SceduleResponse.swift in Sources */,
+				29BD69EB2CFF258C00E9C2C3 /* Lesson.swift in Sources */,
+				29B7BC582CFF7AEA001FF12E /* TextInputComponentView.swift in Sources */,
 				D03EBE3A2CB99E1A00BAA865 /* ScheduleView.swift in Sources */,
 				D03EBE2C2CB99D7C00BAA865 /* AuthViewModel.swift in Sources */,
 				D03EBE082CB993E800BAA865 /* frontendApp.swift in Sources */,
-				29858C752CFDCE0100DD9F72 /* Lesson.swift in Sources */,
 				29965F532CC6B34500C43998 /* WeeksScrollComponentView.swift in Sources */,
 				D03EBE362CB99DDB00BAA865 /* LoginView.swift in Sources */,
 				D03EBE382CB99DEB00BAA865 /* HomeView.swift in Sources */,
@@ -481,6 +512,8 @@
 				D03EBE422CB99E6500BAA865 /* ScheduleService.swift in Sources */,
 				291FA73B2CC55CAA00747E7C /* LessonComponentView.swift in Sources */,
 				D03EBE262CB99D3F00BAA865 /* User.swift in Sources */,
+				29B7BC5B2CFF9162001FF12E /* AuthResponse.swift in Sources */,
+				29BD69EA2CFF258C00E9C2C3 /* SceduleResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,14 +521,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29858C762CFDCE0100DD9F72 /* Lesson.swift in Sources */,
+				29BD69ED2CFF25A000E9C2C3 /* SceduleResponse.swift in Sources */,
 				29BA08EA2CBC5BF400C7A7BA /* WeekComponentView.swift in Sources */,
 				297F9D6E2CCA51DB002E41C3 /* utils.swift in Sources */,
 				D03EBE532CB9B21D00BAA865 /* ScheduleWidgets.swift in Sources */,
 				292193572CBE90EA00084BE3 /* Day.swift in Sources */,
-				29858C732CFDCDE100DD9F72 /* SceduleResponse.swift in Sources */,
+				29BD69EC2CFF259D00E9C2C3 /* Lesson.swift in Sources */,
 				292193582CBE932B00084BE3 /* DateComponentView.swift in Sources */,
 				291FA73C2CC55CAA00747E7C /* LessonComponentView.swift in Sources */,
+				29B7BC5C2CFF9162001FF12E /* AuthResponse.swift in Sources */,
+				29B7BC592CFF7AEA001FF12E /* TextInputComponentView.swift in Sources */,
 				D03EBE512CB9B21D00BAA865 /* ScheduleWidgetsBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
