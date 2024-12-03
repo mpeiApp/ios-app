@@ -11,6 +11,11 @@ class GradesNetworkManager: ObservableObject {
     @Published var gradesData: GradesResponse?
     
     func fetchGrades(username: String) {
+        
+        if (gradesData != nil) {
+            return;
+        }
+        
         guard let url = URL(string: "http://127.0.0.1:8000/grades/grades?username=\(username)") else {
             print("Invalid URL")
             return

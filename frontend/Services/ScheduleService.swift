@@ -11,6 +11,12 @@ class ScheduleNetworkManager: ObservableObject {
     @Published var scheduleData: ScheduleResponse?
     
     func fetchSchedule(groupId: String, startDate: String, endDate: String) {
+        
+        if (scheduleData != nil) {
+            return;
+        }
+        
+        print("ABOBA")
         guard let url = URL(string: "http://127.0.0.1:8000/schedule/by_timestamp?group_id=\(groupId)&start_date=\(startDate)&end_date=\(endDate)") else {
             print("Invalid URL")
             return
