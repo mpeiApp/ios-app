@@ -15,19 +15,26 @@ struct WeekComponentView: View {
     
     var body: some View {
 
-        HStack(spacing: 10) {
+        HStack() {
             ForEach(week.indices, id: \.self) { dayIndex in
                 let globalDayIndex = weekStartIndex + dayIndex
                 DateComponentView(day: week[dayIndex], isActive: activeIndex == globalDayIndex) {
                     activeIndex = globalDayIndex
                 }
+                Spacer()
             }
         }
+        .frame(maxWidth: .infinity)
         .padding()
         
     }
 }
 
-//#Preview {
-//    WeekComponentView()
-//}
+#Preview {
+    @State var activeIndex = 0
+        return WeekComponentView(
+            week: getWeekSemester(monday: getMonday(day: "2024-12-20")),
+            weekStartIndex: 0,
+            activeIndex: $activeIndex
+        )
+}

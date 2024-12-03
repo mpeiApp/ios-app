@@ -46,6 +46,7 @@ struct DateComponentView: View {
                 .padding(.bottom, 10)
                 .foregroundStyle(Color(isActive ? "AccentColor" : "secondaryColor"))
                 .lineLimit(1)
+                .layoutPriority(1)
         }
         .background(
             Rectangle()
@@ -56,6 +57,7 @@ struct DateComponentView: View {
         .onTapGesture {
             action()
         }
+        .frame(minWidth: 40)
     }
 }
 
